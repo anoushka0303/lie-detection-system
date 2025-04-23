@@ -22,15 +22,15 @@ Software Requirements
 
 Install the following on the Raspberry Pi:
 
-<pre>```sudo apt update  
+<pre>sudo apt update  
 sudo apt install python3-pip python3-opencv cmake libboost-all-dev  
-pip3 install dlib opencv-python pyserial numpy gaze_tracking ```</pre>
+pip3 install dlib opencv-python pyserial numpy gaze_tracking </pre>
 
 If dlib fails to build, increase swap memory:
 
-<pre> ```sudo nano /etc/dphys-swapfile  
+<pre> sudo nano /etc/dphys-swapfile  
 Change CONF_SWAPSIZE=100 to CONF_SWAPSIZE=2048  
-sudo /etc/init.d/dphys-swapfile restart```</pre>
+sudo /etc/init.d/dphys-swapfile restart</pre>
 
 Arduino libraries (in the Arduino IDE): No special libraries needed unless using sensor-specific ones
 
@@ -53,7 +53,7 @@ Running the System
 
 Flash your Arduino Uno with the code to read analog sensors and print to serial:
 
-<pre>```void setup() {  
+<pre>void setup() {  
   Serial.begin(9600);  
 }
 
@@ -64,11 +64,11 @@ void loop() {
   Serial.print(",");  
   Serial.println(flex);  
   delay(100);  
-}```</pre>
+}</pre>
 
 2. Run Python Code on Pi
 
-<pre>```python3 main.py```</re>
+<pre>python3 main.py</pre>
 
 Sample main.py handles webcam, serial reading, and prints analysis output.
 
