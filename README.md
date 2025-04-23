@@ -86,5 +86,5 @@ This system is built for educational and experimental purposes. Human behavior i
 
 Author
 
-Developed by Anoushka Prakash and Vaibhav Goyal
+Developed by Anoushka Prakash and Vaibhav Goyal.
 For queries or contributions, feel free to open an issue or reach out.
